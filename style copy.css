@@ -11,8 +11,12 @@ body{
   padding: 0 10px;
   min-height: 100vh;
   align-items: center;
-  background: #3498DB;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+    background-image: url('C:\Users\pc\Desktop\QR-Code-Generator-main\QR Code Generator\mmm.png');
+  
 }
 ::selection{
   color: #fff;
@@ -21,7 +25,8 @@ body{
 .wrapper{
   height: 265px;
   max-width: 410px;
-  background: #fff;
+position: absolute;
+top:0px;
   border-radius: 7px;
   padding: 20px 25px 0;
   transition: height 0.2s ease;
@@ -50,10 +55,50 @@ header p{
   border-radius: 5px;
   transition: 0.1s ease;
 }
+.logo{
+  width:270px;
+  height:180px;
+  position:absolute;
+left:560px;
+top:-40px
+
+}
+.aya{
+  font-size: large;
+  font-weight: 500px;
+}
+.tel{
+  width:270px;
+  height:180px;
+  position:absolute;
+left:600px;
+top:63px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: medium;
+}
+.title{
+  font-size: 40px;
+  color:black;
+  text-align:center;
+  font-weight: 900;
+}
+img{
+  position: absolute;
+  left:-180px;
+  width:100px;
+  height:100px
+}
+p{
+  font-size: 20px;
+  color:black;
+  text-align:center;
+  font-weight: 400;
+}
 .form input{
   font-size: 18px;
   padding: 0 17px;
   border: 1px solid #999;
+  height: 50px;
 }
 .form input:focus{
   box-shadow: 0 3px 6px rgba(0,0,0,0.13);
@@ -61,12 +106,27 @@ header p{
 .form input::placeholder{
   color: #999;
 }
+#Add-image{
+ visibility: hidden;
+}
+form{
+  position: absolute;
+ left:-70px;
+margin-top: -20px;
+}
+
 .form button{
   color: #fff;
   cursor: pointer;
   margin-top: 20px;
   font-size: 17px;
   background: #3498DB;
+}
+.form div{
+  color :Red;
+font-size: 25px;
+  text-align: right;
+  font-weight: 900;
 }
 .qr-code{
   opacity: 0;
